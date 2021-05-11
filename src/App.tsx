@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { FC } from "react";
 import LoginForm from "./components/LoginForm";
+import LoginCreds from "./components/LoginCreds";
 
-function App() {
+const App:FC = () => {
   return (
-    <LoginForm />
+    <div style={{height:"100vh"}}>
+      <LoginForm />
+      <LoginCreds />
+    </div>
   );
-}
+};
 
 export default App;
